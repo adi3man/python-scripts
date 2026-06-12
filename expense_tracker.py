@@ -6,9 +6,7 @@ list_pengeluaran = []
 
 def tambah_pengeluaran(kategori_input, jumlah):
     pilihan = {1: "Makanan", 2: "Transportasi", 3: "Hiburan", 4: "Lainnya"}
-    
-    kategori_nama = pilihan.get(kategori_input, "Lainnya") 
-    
+    kategori_nama = pilihan.get(kategori_input, "Lainnya")
     list_pengeluaran.append({"Kategori": kategori_nama, "Jumlah": jumlah})
     print("Recorded !")
 
@@ -27,16 +25,16 @@ while finish == False:
   print("[2]. Lihat Pengeluaran")
   print("[3]. Total Pengeluaran")
   print("[4]. Keluar")
-  
+
   uinput = int(input("Pilih menu dengan angka : "))
   match uinput:
     case 1:
-      print("Pilih kategori")
+      print("Pilih kategori: ")
       c = 1
       for x in kategori_pengeluaran:
         print(c, ":",x)
         c += 1
-      
+
       kategori_i = input("Pilihan : ")
       jumlah_i = input("Jumlah : Rp ")
       if len(kategori_i) < 1:
