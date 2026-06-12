@@ -21,10 +21,10 @@ while finish == False:
   clear()
   print("-= Expense Tracker V1.0 =-")
   print("Main Menu")
-  print("[1]. Tambah Pengeluaran")
-  print("[2]. Lihat Pengeluaran")
-  print("[3]. Total Pengeluaran")
-  print("[4]. Keluar")
+  print("[1]. Tambah Pengeluaran.")
+  print("[2]. Lihat Pengeluaran.")
+  print("[3]. Total Pengeluaran.")
+  print("[4]. Keluar.")
 
   uinput = int(input("Pilih menu dengan angka : "))
   match uinput:
